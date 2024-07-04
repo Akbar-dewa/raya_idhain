@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Soal Idul Adha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .correct-answer {
+            color: green;
+        }
+        .wrong-answer {
+            color: red;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soal Pilihan Ganda tentang Idul Adha</h1>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. Idul Adha diperingati setiap tanggal berapa dalam kalender Hijriyah?</p>
+            <input type="radio" id="q1a" name="q1" value="1 Syawal">
+            <label for="q1a">1 Syawal</label><br>
+            <input type="radio" id="q1b" name="q1" value="10 Muharram">
+            <label for="q1b">10 Muharram</label><br>
+            <input type="radio" id="q1c" name="q1" value="10 Dzulhijjah">
+            <label for="q1c">10 Dzulhijjah</label><br>
+            <input type="radio" id="q1d" name="q1" value="1 Ramadhan">
+            <label for="q1d">1 Ramadhan</label>
+            <div class="correct-answer" id="q1-correct" style="display: none;">Jawaban benar: 10 Dzulhijjah</div>
+        </div>
+        <div class="question">
+            <p>2. Peristiwa apa yang diperingati pada hari Idul Adha?</p>
+            <input type="radio" id="q2a" name="q2" value="Kelahiran Nabi Muhammad">
+            <label for="q2a">Kelahiran Nabi Muhammad</label><br>
+            <input type="radio" id="q2b" name="q2" value="Peristiwa Isra Miraj">
+            <label for="q2b">Peristiwa Isra Miraj</label><br>
+            <input type="radio" id="q2c" name="q2" value="Kurban Nabi Ibrahim dan Nabi Ismail">
+            <label for="q2c">Kurban Nabi Ibrahim dan Nabi Ismail</label><br>
+            <input type="radio" id="q2d" name="q2" value="Turunnya Al-Qur'an">
+            <label for="q2d">Turunnya Al-Qur'an</label>
+            <div class="correct-answer" id="q2-correct" style="display: none;">Jawaban benar: Kurban Nabi Ibrahim dan Nabi Ismail</div>
+        </div>
+        <div class="question">
+            <p>3. Siapakah putra Nabi Ibrahim yang bersedia dikurbankan?</p>
+            <input type="radio" id="q3a" name="q3" value="Nabi Ismail">
+            <label for="q3a">Nabi Ismail</label><br>
+            <input type="radio" id="q3b" name="q3" value="Nabi Ishaq">
+            <label for="q3b">Nabi Ishaq</label><br>
+            <input type="radio" id="q3c" name="q3" value="Nabi Yaqub">
+            <label for="q3c">Nabi Yaqub</label><br>
+            <input type="radio" id="q3d" name="q3" value="Nabi Yusuf">
+            <label for="q3d">Nabi Yusuf</label>
+            <div class="correct-answer" id="q3-correct" style="display: none;">Jawaban benar: Nabi Ismail</div>
+        </div>
+        <div class="question">
+            <p>4. Apa yang menggantikan Nabi Ismail sebagai kurban?</p>
+            <input type="radio" id="q4a" name="q4" value="Seekor kambing">
+            <label for="q4a">Seekor kambing</label><br>
+            <input type="radio" id="q4b" name="q4" value="Seekor domba">
+            <label for="q4b">Seekor domba</label><br>
+            <input type="radio" id="q4c" name="q4" value="Seekor unta">
+            <label for="q4c">Seekor unta</label><br>
+            <input type="radio" id="q4d" name="q4" value="Seekor sapi">
+            <label for="q4d">Seekor sapi</label>
+            <div class="correct-answer" id="q4-correct" style="display: none;">Jawaban benar: Seekor domba</div>
+        </div>
+        <div class="question">
+            <p>5. Apa makna utama dari Idul Adha?</p>
+            <input type="radio" id="q5a" name="q5" value="Merayakan kemenangan">
+            <label for="q5a">Merayakan kemenangan</label><br>
+            <input type="radio" id="q5b" name="q5" value="Mengingat kelahiran Nabi">
+            <label for="q5b">Mengingat kelahiran Nabi</label><br>
+            <input type="radio" id="q5c" name="q5" value="Meningkatkan takwa, pengorbanan, dan solidaritas sosial">
+            <label for="q5c">Meningkatkan takwa, pengorbanan, dan solidaritas sosial</label><br>
+            <input type="radio" id="q5d" name="q5" value="Merayakan turunnya Al-Qur'an">
+            <label for="q5d">Merayakan turunnya Al-Qur'an</label>
+            <div class="correct-answer" id="q5-correct" style="display: none;">Jawaban benar: Meningkatkan takwa, pengorbanan, dan solidaritas sosial</div>
+        </div>
+        <div class="question">
+            <p>6. Bagaimana niat sholat Idul Adha untuk seorang imam?</p>
+            <input type="radio" id="q6a" name="q6" value="أُصَلِّيْ سُنَّةً لعِيْدِ اْلأَضْحَى رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ مَأْمُوْمًا لِلهِ تَعَــــــــالَى">
+            <label for="q6a">أُصَلِّيْ سُنَّةً لعِيْدِ اْلأَضْحَى رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ مَأْمُوْمًا لِلهِ تَعَــــــــالَى</label><br>
+            <input type="radio" id="q6b" name="q6" value="أُصَلِّيْ سُنَّةً لعِيْدِ اْلأَضْحَى رَكْعَتَيْنِ لِلّٰهِ تَعَـــالَى">
+            <label for="q6b">أُصَلِّيْ سُنَّةً لعِيْدِ اْلأَضْحَى رَكْعَتَيْنِ لِلّٰهِ تَعَـــالَى</label><br>
+            <input type="radio" id="q6c" name="q6" value="أُصَلِّيْ سُنَّةً لعِيْدِ اْلأَضْحَى رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ إِمَامًا لِلهِ تَعَــــــــالَى">
+            <label for="q6c">أُصَلِّيْ سُنَّةً لعِيْدِ اْلأَضْحَى رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ إِمَامًا لِلهِ تَعَــــــــالَى</label><br>
+            <input type="radio" id="q6d" name="q6" value="أُصَلِّيْ سُنَّةً لعِيْدِ اْلأَضْحَى رَكْعَتَيْنِ لِلّٰهِ تَعَالَى">
+            <label for="q6d">أُصَلِّيْ سُنَّةً لعِيْدِ اْلأَضْحَى رَكْعَتَيْنِ لِلّٰهِ تَعَالَى</label>
+            <div class="correct-answer" id="q6-correct" style="display: none;">Jawaban benar: أُصَلِّيْ سُنَّةً لعِيْدِ اْلأَضْحَى رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ إِمَامًا لِلهِ تَعَــــــــالَى</div>
+        </div>
+        <div class="question">
+            <p>7. Apa tujuan utama dari berkurban pada Idul Adha?</p>
+            <input type="radio" id="q7a" name="q7" value="Memperoleh kekayaan">
+            <label for="q7a">Memperoleh kekayaan</label><br>
+            <input type="radio" id="q7b" name="q7" value="Meningkatkan ketakwaan dan kepedulian sosial">
+            <label for="q7b">Meningkatkan ketakwaan dan kepedulian sosial</label><br>
+            <input type="radio" id="q7c" name="q7" value="Merayakan tahun baru">
+            <label for="q7c">Merayakan tahun baru</label><br>
+            <input type="radio" id="q7d" name="q7" value="Menghormati orang tua">
+            <label for="q7d">Menghormati orang tua</label>
+            <div class="correct-answer" id="q7-correct" style="display: none;">Jawaban benar: Meningkatkan ketakwaan dan kepedulian sosial</div>
+        </div>
+        <div class="question">
+            <p>8. Siapa yang harus melakukan penyembelihan hewan kurban?</p>
+            <input type="radio" id="q8a" name="q8" value="Orang yang berpuasa">
+            <label for="q8a">Orang yang berpuasa</label><br>
+            <input type="radio" id="q8b" name="q8" value="Orang yang berhaji">
+            <label for="q8b">Orang yang berhaji</label><br>
+            <input type="radio" id="q8c" name="q8" value="Semua umat Islam yang mampu">
+            <label for="q8c">Semua umat Islam yang mampu</label><br>
+            <input type="radio" id="q8d" name="q8" value="Para pemuka agama">
+            <label for="q8d">Para pemuka agama</label>
+            <div class="correct-answer" id="q8-correct" style="display: none;">Jawaban benar: Semua umat Islam yang mampu</div>
+        </div>
+        <div class="question">
+            <p>9. Apa yang diajarkan dari ketaatan Nabi Ibrahim dan Nabi Ismail?</p>
+            <input type="radio" id="q9a" name="q9" value="Keberanian dalam berperang">
+            <label for="q9a">Keberanian dalam berperang</label><br>
+            <input type="radio" id="q9b" name="q9" value="Kesabaran dalam berdagang">
+            <label for="q9b">Kesabaran dalam berdagang</label><br>
+            <input type="radio" id="q9c" name="q9" value="Ketaatan dan keikhlasan dalam menjalankan perintah Allah">
+            <label for="q9c">Ketaatan dan keikhlasan dalam menjalankan perintah Allah</label><br>
+            <input type="radio" id="q9d" name="q9" value="Ketekunan dalam belajar">
+            <label for="q9d">Ketekunan dalam belajar</label>
+            <div class="correct-answer" id="q9-correct" style="display: none;">Jawaban benar: Ketaatan dan keikhlasan dalam menjalankan perintah Allah</div>
+        </div>
+        <div class="question">
+            <p>10. Berapa hari tasyrik berlangsung setelah Idul Adha?</p>
+            <input type="radio" id="q10a" name="q10" value="1 hari">
+            <label for="q10a">1 hari</label><br>
+            <input type="radio" id="q10b" name="q10" value="2 hari">
+            <label for="q10b">2 hari</label><br>
+            <input type="radio" id="q10c" name="q10" value="3 hari">
+            <label for="q10c">3 hari</label><br>
+            <input type="radio" id="q10d" name="q10" value="4 hari">
+            <label for="q10d">4 hari</label>
+            <div class="correct-answer" id="q10-correct" style="display: none;">Jawaban benar: 3 hari</div>
+        </div>
+        <input type="submit" value="Kirim Jawaban">
+    </form>
+    <div class="button-container">
+        <button onclick="window.location.reload();">Coba Lagi</button>
+    </div>
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const answers = {
+                q1: '10 Dzulhijjah',
+                q2: 'Kurban Nabi Ibrahim dan Nabi Ismail',
+                q3: 'Nabi Ismail',
+                q4: 'Seekor domba',
+                q5: 'Meningkatkan takwa, pengorbanan, dan solidaritas sosial',
+                q6: 'أُصَلِّيْ سُنَّةً لعِيْدِ اْلأَضْحَى رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ إِمَامًا لِلهِ تَعَــــــــالَى',
+                q7: 'Meningkatkan ketakwaan dan kepedulian sosial',
+                q8: 'Semua umat Islam yang mampu',
+                q9: 'Ketaatan dan keikhlasan dalam menjalankan perintah Allah',
+                q10: '3 hari'
+            };
+            let score = 0;
+            const form = new FormData(event.target);
+            for (const [name, value] of form.entries()) {
+                if (value === answers[name]) {
+                    score++;
+                    document.getElementById(name + '-correct').style.display = 'none';
+                } else {
+                    document.getElementById(name + '-correct').style.display = 'block';
+                }
+            }
+            alert('Skor Anda: ' + score);
+        });
+    </script>
+</body>
+</html>
